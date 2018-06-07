@@ -22,7 +22,7 @@
    */
 
   /**
-   * Constructs a new QueryApi. 
+   * Constructs a new QueryApi.
    * @alias module:api/QueryApi
    * @class
    * @param {module:ApiClient} apiClient Optional API client implementation to use, default to {@link module:ApiClient#instance}
@@ -539,7 +539,7 @@
       var authNames = ['oauth2'];
       var contentTypes = ['application/json'];
       var accepts = ['text', 'application/json', 'image/png', 'image/jpg'];
-      var returnType = 'String';
+      var returnType = 'json';
 
       return this.apiClient.callApi(
         '/queries/{query_id}/run/{result_format}', 'GET',
